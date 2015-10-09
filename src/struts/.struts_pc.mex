@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="pc" location="0,0" size="0,0">
+    <action name="index_slider" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="showVideo*" location="0,0" size="0,0">
+      <result name="{1}">
+        <resourceEdge source="{1}" routing="0" target="Video{1}.jsp" />
+      </result>
+    </action>
+    <action name="device*" location="0,0" size="0,0">
+      <result name="ShowMy">
+        <resourceEdge source="ShowMy" routing="0" target="MyDevice.jsp" />
+      </result>
+      <result name="DownLoad">
+        <resourceEdge source="DownLoad" routing="0" target="ActiveDownLoad.jsp" />
+      </result>
+      <result name="ShowMyAdd">
+        <resourceEdge source="ShowMyAdd" routing="0" target="AddDevice.jsp" />
+      </result>
+      <result name="AddMy">
+        <resourceEdge source="AddMy" routing="0" target="Alert.jsp" />
+      </result>
+      <result name="RemoveMy">
+        <resourceEdge source="RemoveMy" routing="0" target="Message.jsp" />
+      </result>
+      <result name="login" />
+    </action>
+    <action name="addVideoShare" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="Alert.jsp" />
+      </result>
+      <result name="login" />
+    </action>
+    <action name="removeShareInfo" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="Message.jsp" />
+      </result>
+      <result name="login" />
+    </action>
+    <action name="showVideoPlay" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="VideoPlay.jsp" />
+      </result>
+      <result name="notFind">
+        <resourceEdge source="notFind" routing="0" target="404.jsp" />
+      </result>
+    </action>
+    <action name="showSingleTinyVideo" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="showSingleTinyVideo.jsp" />
+      </result>
+      <result name="notFind">
+        <resourceEdge source="notFind" routing="0" target="404.jsp" />
+      </result>
+    </action>
+    <action name="agreeeVideo" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="Message.jsp" />
+      </result>
+    </action>
+    <action name="addVideocomment" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="Alert.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="Message.jsp" />
+      </result>
+    </action>
+    <action name="showVideocomment" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="VideoComment.jsp" />
+      </result>
+    </action>
+    <action name="agreeeVideocomment" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="Message.jsp" />
+      </result>
+    </action>
+    <action name="delComment" location="0,0" size="0,0" />
+    <action name="accountSDKTest" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="accounttest.jsp" />
+      </result>
+    </action>
+    <action name="accountSDKTest_login" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="accounttest.jsp" />
+      </result>
+    </action>
+    <action name="accountSDKTest_delDevice" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="accounttest.jsp" />
+      </result>
+    </action>
+    <action name="accountSDKTest_getDevice" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="accounttest.jsp" />
+      </result>
+    </action>
+    <action name="accountSDKTest_addDevice" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="accounttest.jsp" />
+      </result>
+    </action>
+    <action name="service" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="ServiceList.jsp" />
+      </result>
+      <result name="login" />
+    </action>
+    <action name="serviceDetail" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="ServiceDetail.jsp" />
+      </result>
+      <result name="login" />
+    </action>
+    <action name="servicePay" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="ServicePay.jsp" />
+      </result>
+      <result name="login" />
+      <result name="free">
+        <resourceEdge source="free" routing="0" target="ServicePayResult.jsp" />
+      </result>
+    </action>
+    <action name="paySuccess" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="paySuccess.jsp" />
+      </result>
+      <result name="login" />
+      <result name="free">
+        <resourceEdge source="free" routing="0" target="ServicePayResult.jsp" />
+      </result>
+    </action>
+    <action name="servicePayResult" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="ServicePayResult.jsp" />
+      </result>
+    </action>
+    <action name="servicePayNotify" location="0,0" size="0,0" />
+    <action name="support" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="support.jsp" />
+      </result>
+    </action>
+    <action name="about" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="about_us.jsp" />
+      </result>
+    </action>
+    <action name="shop" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="shop.jsp" />
+      </result>
+    </action>
+    <action name="getpwdform" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="getpwdform.jsp" />
+      </result>
+    </action>
+    <action name="getpwd" location="0,0" size="0,0" />
+    <action name="resetpwdform" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="resetpwdform.jsp" />
+      </result>
+    </action>
+    <action name="resetpwd" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="Alert.jsp" />
+      </result>
+    </action>
+    <action name="updatepwdform" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="updatepwdform.jsp" />
+      </result>
+    </action>
+    <action name="updatepwd" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="Alert.jsp" />
+      </result>
+    </action>
+    <action name="logout" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="login" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="user.jsp" />
+      </result>
+    </action>
+    <action name="checkLogin" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="login" />
+      <result name="nextUrl" />
+    </action>
+    <action name="userReg" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="callReg" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="reg" />
+      <result name="nextUrl" />
+    </action>
+    <action name="gainCode" location="0,0" size="0,0" />
+    <action name="clearCode" location="0,0" size="0,0" />
+    <action name="userExist" location="0,0" size="0,0" />
+    <action name="shareManage" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="login" />
+    </action>
+  </package>
+  <webResource name="reportmain1.html" path="report/reportmain1.html" location="65,450" size="150,55" />
+  <webResource name="reportmain.html" path="report/reportmain.html" location="1048,450" size="150,55" />
+  <webResource name="index.jsp" path="slider/index.jsp" location="0,0" size="0,0" />
+  <webResource name="VideoNewMain.jsp" path="/UI/pc/VideosSquare/VideoNewMain.jsp" location="0,0" size="0,0" />
+  <webResource name="VideoNewSecond.jsp" path="/UI/pc/VideosSquare/VideoNewSecond.jsp" location="0,0" size="0,0" />
+  <webResource name="VideoList.jsp" path="VideosSquare/VideoList.jsp" location="0,0" size="0,0" />
+  <webResource name="AddDevice.jsp" path="UserCenter/AddDevice.jsp" location="0,0" size="0,0" />
+  <webResource name="login.jsp" path="login.jsp" location="0,0" size="0,0" />
+  <webResource name="MyDevice.jsp" path="UserCenter/MyDevice.jsp" location="0,0" size="0,0" />
+  <webResource name="Alert.jsp" path="jsp/Alert.jsp" location="0,0" size="0,0" />
+  <webResource name="ActiveDownLoad.jsp" path="UserCenter/ActiveDownLoad.jsp" location="0,0" size="0,0" />
+  <webResource name="Message.jsp" path="jsp/Message.jsp" location="0,0" size="0,0" />
+  <webResource name="VideoPlay.jsp" path="/UI/pc/VideosSquare/VideoPlay.jsp" location="0,0" size="0,0" />
+  <webResource name="VideoComment.jsp" path="/UI/pc/VideosSquare/VideoComment.jsp" location="0,0" size="0,0" />
+  <webResource name="accounttest.jsp" path="accounttest.jsp" location="0,0" size="0,0" />
+  <webResource name="support.jsp" path="Support/support.jsp" location="0,0" size="0,0" />
+  <webResource name="about.jsp" path="Support/about.jsp" location="0,0" size="0,0" />
+  <webResource name="getpwdform.jsp" path="Support/getpwdform.jsp" location="0,0" size="0,0" />
+  <webResource name="updatepwdform.jsp" path="Support/updatepwdform.jsp" location="0,0" size="0,0" />
+  <webResource name="resetpwdform.jsp" path="Support/resetpwdform.jsp" location="0,0" size="0,0" />
+  <webResource name="ServiceList.jsp" path="ServiceOpen/ServiceList.jsp" location="0,0" size="0,0" />
+  <webResource name="ServiceDetail.jsp" path="ServiceOpen/ServiceDetail.jsp" location="0,0" size="0,0" />
+  <webResource name="ServicePay.jsp" path="ServiceOpen/ServicePay.jsp" location="0,0" size="0,0" />
+  <webResource name="ServicePayResult.jsp" path="ServiceOpen/ServicePayResult.jsp" location="0,0" size="0,0" />
+  <webResource name="paySuccess.jsp" path="ServiceOpen/paySuccess.jsp" location="0,0" size="0,0" />
+  <webResource name="shop.jsp" path="Shop/shop.jsp" location="0,0" size="0,0" />
+  <webResource name="MyDevice.jsp" path="/UI/pc/UserCenter/MyDevice.jsp" location="0,0" size="0,0" />
+  <webResource name="login.jsp" path="/pc/login.jsp" location="0,0" size="0,0" />
+  <webResource name="ActiveDownLoad.jsp" path="/UI/pc/UserCenter/ActiveDownLoad.jsp" location="0,0" size="0,0" />
+  <webResource name="AddDevice.jsp" path="/UI/pc/UserCenter/AddDevice.jsp" location="0,0" size="0,0" />
+  <webResource name="Alert.jsp" path="/commonUI/Alert.jsp" location="0,0" size="0,0" />
+  <webResource name="Message.jsp" path="/commonUI/Message.jsp" location="0,0" size="0,0" />
+  <webResource name="support.jsp" path="../UI/pc/UnionModule/support.jsp" location="0,0" size="0,0" />
+  <webResource name="about.jsp" path="../UI/pc/UnionModule/about.jsp" location="0,0" size="0,0" />
+  <webResource name="shop.jsp" path="../UI/pc/UnionModule/shop.jsp" location="0,0" size="0,0" />
+  <webResource name="getpwdform.jsp" path="../UI/pc/UnionModule/getpwdform.jsp" location="0,0" size="0,0" />
+  <webResource name="Alert.jsp" path="../commonUI/Alert.jsp" location="0,0" size="0,0" />
+  <webResource name="resetpwdform.jsp" path="../UI/pc/UnionModule/resetpwdform.jsp" location="0,0" size="0,0" />
+  <webResource name="ServiceList.jsp" path="/UI/pc/ServiceOpen/ServiceList.jsp" location="0,0" size="0,0" />
+  <webResource name="ServiceDetail.jsp" path="/UI/pc/ServiceOpen/ServiceDetail.jsp" location="0,0" size="0,0" />
+  <webResource name="ServicePay.jsp" path="/UI/pc/ServiceOpen/ServicePay.jsp" location="0,0" size="0,0" />
+  <webResource name="ServicePayResult.jsp" path="/UI/pc/ServiceOpen/ServicePayResult.jsp" location="0,0" size="0,0" />
+  <webResource name="paySuccess.jsp" path="/UI/pc/ServiceOpen/paySuccess.jsp" location="0,0" size="0,0" />
+  <webResource name="reportmain1.html" path="/report/reportmain1.html" location="0,0" size="0,0" />
+  <webResource name="reportmain.html" path="/UI/reportmain.html" location="0,0" size="0,0" />
+  <webResource name="index.jsp" path="../UI/pc/UnionModule/index.jsp" location="0,0" size="0,0" />
+  <webResource name="updatepwdform.jsp" path="../UI/pc/UnionModule/updatepwdform.jsp" location="0,0" size="0,0" />
+  <webResource name="about_us.jsp" path="../UI/pc/UnionModule/about_us.jsp" location="0,0" size="0,0" />
+  <webResource name="user.jsp" path="../UI/pc/UnionModule/user.jsp" location="0,0" size="0,0" />
+  <webResource name="Video{1}.jsp" path="/UI/pc/VideosSquare/Video{1}.jsp" location="0,0" size="0,0" />
+  <webResource name="404.jsp" path="/commonUI/404.jsp" location="0,0" size="0,0" />
+  <webResource name="showSingleTinyVideo.jsp" path="/UI/pc/VideosSquare/showSingleTinyVideo.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

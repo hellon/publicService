@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dns>
+  <retcode>0</retcode>
+  <domainlist>
+    <domain name="xwacc.cloudsee.net" port="17009" timeout="1800">
+      <ip>60.216.75.26</ip>
+    </domain>
+  </domainlist>
+</dns>

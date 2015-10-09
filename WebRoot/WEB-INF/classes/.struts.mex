@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="struts_base" location="0,0" size="0,0" />
+  <package name="manager-base" location="0,0" size="0,0" />
+  <package name="httpApi-base" location="0,0" size="0,0" />
+  <include file="struts_unset.xml" location="10,10" size="150,30" />
+  <include file="struts_fixed.xml" location="255,10" size="150,30" />
+  <include file="struts_phone.xml" location="255,115" size="150,30" />
+  <include file="struts_pc.xml" location="0,0" size="0,0" />
+  <include file="struts_api.xml" location="0,0" size="0,0" />
+  <include file="struts_managerAdmin.xml" location="0,0" size="0,0" />
+  <include file="struts_managerBack.xml" location="0,0" size="0,0" />
+  <include file="struts_managerShare.xml" location="0,0" size="0,0" />
+  <include file="struts_http.xml" location="0,0" size="0,0" />
+</Struts2Diagram>
+

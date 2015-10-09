@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="httpApi" location="10,9" size="180,71">
+    <action name="video*" location="0,0" size="0,0" />
+    <action name="comments*" location="0,0" size="0,0" />
+    <action name="login*" location="0,0" size="0,0" />
+  </package>
+</Struts2Diagram>
+

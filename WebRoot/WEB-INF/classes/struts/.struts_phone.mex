@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="phone" location="0,0" size="0,0">
+    <action name="showPhoneVideos" location="0,0" size="0,0" />
+    <action name="showVideosJSon" location="0,0" size="0,0" />
+    <action name="playPhoneVideo" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="player.jsp" />
+      </result>
+    </action>
+    <action name="playMobileVideo" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="player.jsp" />
+      </result>
+    </action>
+    <action name="commitCommentList" location="0,0" size="0,0" />
+    <action name="addPhoneVideocomment" location="0,0" size="0,0" />
+    <action name="againstVideocomment" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="Message.jsp" />
+      </result>
+    </action>
+    <action name="default" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="phone_new.jsp" />
+      </result>
+    </action>
+    <action name="login" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="login.jsp" />
+      </result>
+    </action>
+    <action name="checkLogin" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="login" />
+      <result name="nextUrl" />
+      <result name="displayLogin" />
+    </action>
+    <action name="userReg" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="callReg" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="reg" />
+      <result name="nextUrl" />
+      <result name="displayReg" />
+      <result name="displayLogin" />
+    </action>
+    <action name="showInstallRegForm" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="addInstallReg" location="0,0" size="0,0" />
+    <action name="GetOnlineDevice" location="0,0" size="0,0" />
+    <action name="ShowReport" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="GetMonRegAcount" location="0,0" size="0,0" />
+    <action name="GetMonDycAcount" location="0,0" size="0,0" />
+    <action name="GetToalDevice" location="0,0" size="0,0" />
+    <action name="GetWeekOnlineDevice" location="0,0" size="0,0" />
+    <action name="GetWeekRegAcount" location="0,0" size="0,0" />
+    <action name="GetWeekDycAcount" location="0,0" size="0,0" />
+    <action name="displayLogin" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="nineBlock" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="displayUserReg" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="player.jsp" path="../UI/mobile/player.jsp" location="0,0" size="0,0" />
+  <webResource name="Message.jsp" path="../commonUI/Message.jsp" location="0,0" size="0,0" />
+  <webResource name="phone_new.jsp" path="../UI/mobile/phone_new.jsp" location="0,0" size="0,0" />
+  <webResource name="login.jsp" path="../UI/mobile/login.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

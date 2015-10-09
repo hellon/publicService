@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="IpApi" extends="httpApi-base" namespace="/ipManage">
+		<!-- 使用通配符简化配置 -->
+		<action name="get*" class="IpController" method="{1}">
+			<result name="unicom" type="redirect">/iptables/unicom.xml</result>
+			<result name="mobile" type="redirect">/iptables/mobile.xml</result>
+			<result name="telecom" type="redirect">/iptables/telecom.xml</result>
+			<result name="other" type="redirect">/iptables/other.xml</result>
+			<result name="foreign" type="redirect">/iptables/foreign.xml</result>
+		</action>
+		  
+	</package>
+	
+</struts>

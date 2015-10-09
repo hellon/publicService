@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="unset" location="445,410" size="8225,350">
+    <action name="default" location="0,0" size="0,0">
+      <result name="Main">
+        <resourceEdge source="Main" routing="0" target="index.jsp" />
+      </result>
+      <result name="mobile" />
+    </action>
+    <action name="agreement" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="agreement.jsp" />
+      </result>
+    </action>
+    <action name="list" location="0,0" size="0,0">
+      <result name="Second">
+        <resourceEdge source="Second" routing="0" target="list.jsp" />
+      </result>
+    </action>
+    <action name="showVideoPlay" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="player.jsp" />
+      </result>
+      <result name="notFind">
+        <resourceEdge source="notFind" routing="0" target="404.jsp" />
+      </result>
+    </action>
+    <action name="agreeVideo" location="0,0" size="0,0" />
+    <action name="collect" location="0,0" size="0,0" />
+  </package>
+  <webResource name="VideoList.jsp" path="VideosSquare/VideoList.jsp" location="8436,255" size="150,55" />
+  <webResource name="VideoNewSecond.jsp" path="VideosSquare/VideoNewSecond.jsp" location="8736,535" size="150,55" />
+  <webResource name="AddDevice.jsp" path="UserCenter/AddDevice.jsp" location="8197,815" size="150,55" />
+  <webResource name="login.jsp" path="login.jsp" location="10,10" size="150,55" />
+  <webResource name="MyDevice.jsp" path="UserCenter/MyDevice.jsp" location="7955,815" size="150,55" />
+  <webResource name="Alert.jsp" path="jsp/Alert.jsp" location="4870,115" size="150,55" />
+  <webResource name="ActiveDownLoad.jsp" path="UserCenter/ActiveDownLoad.jsp" location="7412,815" size="150,55" />
+  <webResource name="Message.jsp" path="jsp/Message.jsp" location="6474,255" size="150,55" />
+  <webResource name="VideoPlay.jsp" path="VideosSquare/VideoPlay.jsp" location="6441,815" size="150,55" />
+  <webResource name="VideoComment.jsp" path="VideosSquare/VideoComment.jsp" location="6187,815" size="150,55" />
+  <webResource name="accounttest.jsp" path="accounttest.jsp" location="5494,815" size="150,55" />
+  <webResource name="support.jsp" path="Support/support.jsp" location="4012,815" size="150,55" />
+  <webResource name="about.jsp" path="Support/about.jsp" location="3773,815" size="150,55" />
+  <webResource name="index.jsp" path="slider/index.jsp" location="3531,815" size="150,55" />
+  <webResource name="getpwdform.jsp" path="Support/getpwdform.jsp" location="3268,815" size="150,55" />
+  <webResource name="updatepwdform.jsp" path="Support/updatepwdform.jsp" location="3014,815" size="150,55" />
+  <webResource name="resetpwdform.jsp" path="Support/resetpwdform.jsp" location="2772,815" size="150,55" />
+  <webResource name="ServiceList.jsp" path="ServiceOpen/ServiceList.jsp" location="2273,815" size="150,55" />
+  <webResource name="ServiceDetail.jsp" path="ServiceOpen/ServiceDetail.jsp" location="2022,815" size="150,55" />
+  <webResource name="ServicePay.jsp" path="ServiceOpen/ServicePay.jsp" location="1751,815" size="150,55" />
+  <webResource name="ServicePayResult.jsp" path="ServiceOpen/ServicePayResult.jsp" location="1208,920" size="150,55" />
+  <webResource name="paySuccess.jsp" path="ServiceOpen/paySuccess.jsp" location="1506,815" size="150,55" />
+  <webResource name="shop.jsp" path="Shop/shop.jsp" location="285,605" size="150,55" />
+  <webResource name="index.jsp" path="UI/pc/UnionModule/index.jsp" location="0,0" size="0,0" />
+  <webResource name="list.jsp" path="UI/pc/UnionModule/list.jsp" location="0,0" size="0,0" />
+  <webResource name="player.jsp" path="UI/pc/UnionModule/player.jsp" location="0,0" size="0,0" />
+  <webResource name="404.jsp" path="/commonUI/404.jsp" location="0,0" size="0,0" />
+  <webResource name="agreement.jsp" path="UI/pc/UnionModule/agreement.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

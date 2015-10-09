@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="api" location="226,165" size="280,455">
+    <action name="addMobileVideoShareUI" location="65,71" size="150,83">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="mobileMain.jsp" />
+      </result>
+    </action>
+    <action name="shareVideoOnSquareUI" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="videoShare.jsp" />
+      </result>
+      <result name="checking">
+        <resourceEdge source="checking" routing="0" target="checking.jsp" />
+      </result>
+      <result name="cancel">
+        <resourceEdge source="cancel" routing="0" target="cancel.jsp" />
+      </result>
+    </action>
+    <action name="addMobileVideoShare" location="65,267" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="shareResult.jsp" />
+      </result>
+    </action>
+    <action name="cancelMobileVideoShare" location="65,373" size="150,40" />
+    <action name="getVideoStatus" location="0,0" size="0,0" />
+    <action name="showVideos" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="showVideos.jsp" />
+      </result>
+    </action>
+    <action name="showVideo" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="showVideo.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="videoShare.jsp" path="/UI/api/videoShare.jsp" location="564,220" size="150,55" />
+  <webResource name="checking.jsp" path="/UI/api/checking.jsp" location="10,220" size="150,55" />
+  <webResource name="cancel.jsp" path="/UI/api/cancel.jsp" location="296,10" size="150,55" />
+  <webResource name="shareResult.jsp" path="/UI/api/shareResult.jsp" location="561,395" size="150,55" />
+  <webResource name="showVideos.jsp" path="/UI/api/showVideos.jsp" location="0,0" size="0,0" />
+  <webResource name="showVideo.jsp" path="/UI/api/showVideo.jsp" location="0,0" size="0,0" />
+  <webResource name="mobileMain.jsp" path="/UI/api/mobileMain.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

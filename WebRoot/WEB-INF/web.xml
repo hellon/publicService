@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:application/app*.xml</param-value>
+	</context-param>
+	
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+  <servlet>
+    <servlet-name>ConfigBeanInitServlet</servlet-name>
+    <servlet-class>com.jovision.servlet.ConfigBeanInitServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ZeroMQServerServlet</servlet-name>
+    <servlet-class>com.jovision.servlet.ZeroMQServerServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>  
+  
+    
+  <servlet>
+    <servlet-name>log4j</servlet-name>
+    <servlet-class>com.jovision.servlet.Log4jInitServlet</servlet-class>
+    <init-param>
+      <param-name>log4j-init-file</param-name>
+      <param-value>WEB-INF/classes/log4j.properties</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+
+
+	<filter>
+		<filter-name>struts-prepare</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts-prepare</filter-name>
+		<url-pattern>*.do</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>*.do</url-pattern>
+	</filter-mapping>
+
+	<mime-mapping>
+		<extension>doc</extension>
+		<mime-type>application/msword</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>xls</extension>
+		<mime-type>application/msexcel</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>pdf</extension>
+		<mime-type>application/pdf</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>zip</extension>
+		<mime-type>application/zip</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>rar</extension>
+		<mime-type>application/rar</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>txt</extension>
+		<mime-type>application/txt</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>chm</extension>
+		<mime-type>application/mshelp</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>mp3</extension>
+		<mime-type>audio/x-mpeg</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>apk</extension>
+		<mime-type>application/vnd.android.package-archive</mime-type>
+	</mime-mapping>
+
+	<mime-mapping>
+		<extension>mp4</extension>
+		<mime-type>video/mp4</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>ogv</extension>
+		<mime-type>video/ogg</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>webm</extension>
+		<mime-type>video/webm</mime-type>
+	</mime-mapping>
+
+	<welcome-file-list>
+		<welcome-file>default.action</welcome-file>
+		<welcome-file>index.action</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+	</welcome-file-list>
+	
+	<error-page>
+	    <error-code>404</error-code>
+	    <location>/commonUI/404.jsp</location>
+	</error-page>
+
+</web-app>

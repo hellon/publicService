@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="dialect">
+			org.hibernate.dialect.MySQLDialect
+		</property>
+		<property name="connection.url">
+			jdbc:mysql://60.216.75.26:3306/DeviceDB?characterEncoding=utf-8
+		</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">ys12047</property>
+
+		<property name="connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+
+		<property name="myeclipse.connection.profile">
+			DeviceDB
+		</property>
+		<property name="connection.autocommit">true</property>
+		<property name="hibernate.show_sql">true</property>
+
+
+		<property name="hibernate.connection.provider_class">
+			org.hibernate.connection.C3P0ConnectionProvider
+		</property>
+
+		<property name="hibernate.c3p0.acquire_increment">1</property>
+		<property name="hibernate.c3p0.idle_test_period">0</property>
+		<property name="hibernate.c3p0.timeout">0</property>
+		<property name="hibernate.c3p0.validate">true</property>
+
+		<mapping resource="com/jovision/domain/TbDeviceBasic.hbm.xml" />
+
+		<mapping resource="com/jovision/domain/TbDeviceIpc.hbm.xml" />
+
+		<mapping resource="com/jovision/domain/TbUserDevice.hbm.xml" />
+		<mapping resource="com/jovision/domain/TbDeviceAlarm.hbm.xml" />
+		<mapping resource="com/jovision/domain/TbWeburl.hbm.xml" />
+		<mapping resource="com/jovision/domain/TbAppVersion.hbm.xml" />
+		<mapping resource="com/jovision/domain/TbDeviceVersion.hbm.xml" />
+		<mapping
+			resource="com/jovision/domain/TbAdvertisementVersion.hbm.xml" />
+		<mapping resource="com/jovision/domain/IpTables.hbm.xml" />
+
+	</session-factory>
+
+</hibernate-configuration>

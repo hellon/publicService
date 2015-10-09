@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.multipart.maxSize" value="5000000" />
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.action.excludePattern" value="/dwr/*" />
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<package name="httpApi-base" extends="json-default"><!--
+		<interceptors>
+			<interceptor name="permissionInterceptor" class="servlet.interceptor.HttpLoginInterceptor" />
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="permissionInterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="myStack" />-->
+		<global-results>
+			<result type="json">
+				<param name="excludeProperties">
+					cdao
+				</param>
+			</result>
+			<result name="login" >/login.html</result>
+		</global-results>
+	</package>
+	<include file="struts/struts_device.xml"></include>
+	<include file="struts/struts_alarm.xml"></include>
+	<include file="struts/struts_other.xml"></include>
+	<include file="struts/struts_ip.xml"></include>
+</struts>
