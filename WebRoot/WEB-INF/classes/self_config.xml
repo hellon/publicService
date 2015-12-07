@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <webpaltform>
 	<!-- redis数据库的连接地址 -->
-	<param redisIP="60.216.75.26"/>
+	<param redisIP="192.168.1.26"/>
 	<!-- redis数据库的端口号 -->
 	<param redisPort="6379"/>
 	<!-- zeroMQ服务端口 -->
 	<param zeroServicePort="5555"/>
 	<!-- 设备模块连接信息 -->
-	<param deviceConnInfo="tcp://172.16.31.45:5555"/>
+	<param deviceConnInfo="tcp://192.16.31.45:5555"/>
 	<!-- 报警模块连接信息 -->
-	<param alarmConnInfo="tcp://172.16.31.45:5555"/>
+	<param alarmConnInfo="tcp://192.16.31.45:5555"/>
 	<!-- 云存储模块连接信息 -->
-	<param cloudStorageConnInfo="tcp://172.16.31.45:5555"/>
+	<param cloudStorageConnInfo="tcp://192.16.31.45:5555"/>
 	<!-- AES解密密码 -->
 	<param aesPasseord="HQM/NS0ujPGbF+/8"/>
 	<!-- 访问账号服务器地址 -->
-	<param accountService="http://123.57.162.111:8080/accountService"/>
+	<param accountService="http://192.168.1.1:8080/accountService"/>
 </webpaltform>
